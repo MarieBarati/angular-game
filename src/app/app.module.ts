@@ -15,13 +15,15 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
 import { HttpErrorInterceptor } from './interceptors/http-error.interceptor';
 import { HttpService } from './services/http.service';
+import { DetailsComponent } from './components/details/details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
-    HomeComponent
+    HomeComponent,
+    DetailsComponent
 
   ],
   imports: [
@@ -32,7 +34,7 @@ import { HttpService } from './services/http.service';
     MatFormFieldModule,
     HttpClientModule,
     MatIconModule,
-    GaugeModule,
+    GaugeModule.forRoot(),
     MatSelectModule,
     MatTabsModule
 
